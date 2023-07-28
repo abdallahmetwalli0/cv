@@ -84,7 +84,7 @@ ul {
   }
 }
 .width {
-  width: 400px;
+  width: 417px;
   padding-left: 14px;
   margin-right: 30px;
 }
@@ -181,6 +181,10 @@ ul {
 .section-one .social ul li a {
   color: var(--main-color);
   font-size: 12px;
+  transition: 0.3s;
+}
+.section-one .social ul li a:hover {
+  color: #777;
 }
 /* End Section One */
 /*  Start Section Two */
@@ -236,6 +240,9 @@ ul {
   }
 }
 /* -------- */
+.section-two {
+  padding: 14px 0;
+}
 .section-two .skills {
   margin-bottom: 22px;
 }
@@ -263,6 +270,10 @@ ul {
 .section-two .projects span {
   margin-bottom: 14px;
 }
+.section-two .projects a:hover {
+  color: #777;
+  transition: 0.3s;
+}
 .section-two .projects a i {
   padding-right: 5px;
 }
@@ -270,8 +281,20 @@ ul {
 .section-two .certificates {
   margin-bottom: 22px;
 }
+.section-two .certificates .all-cartificat {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .section-two .certificates .all-cartificat {
+    flex-direction: column;
+  }
+}
 .section-two .certificat {
   margin-top: 10px;
+}
+.section-two .certificat:first-child {
+  margin-right: 5px;
 }
 .section-two .certificat h4 {
   margin-bottom: 5px;
@@ -283,6 +306,12 @@ ul {
 .section-two .certificat a {
   margin-bottom: 5px;
   font-size: 12px;
+  color: var(--color-p);
+  transition: 0.3s;
+}
+.section-two .certificat a:hover {
+  padding-left: 5px;
+  color: var(--secondary-color);
 }
 .section-two .education h4 {
   margin: 0;
@@ -290,5 +319,10 @@ ul {
 }
 .section-two .education p {
   margin-top: 5px;
+  margin-bottom: 0;
+  color: var(--section-background-three);
+}
+.section-two .education span {
+  color: #777;
 }
 /* End Section Two */
